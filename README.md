@@ -1,3 +1,4 @@
+```
 This script takes as input a directory and combines all the *.MATS.JCEC.txt files found into one file per subdirectory with *.MATS.JCEC.txt files.
 
 EXAMPLE:
@@ -36,3 +37,4 @@ USAGE:
 
 	You can run this script from the login node on the HPC. Just load pandas first:
 		module load pandas
+```
