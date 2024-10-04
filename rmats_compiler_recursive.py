@@ -220,7 +220,7 @@ for rMATS_analysis in JCEC_locations_dict:
 
 #%%
 if no_files%5 != 0:
-	print('>>>WARNING: Number of files not divisible by 0. Are all event types present?')
+	print('>>>WARNING: Number of files not divisible by 5. Are all event types present?')
 
 print('--- rmats_compiler_recursive.py finished ---')
 print()
