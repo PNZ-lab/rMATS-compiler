@@ -47,7 +47,19 @@ Optionally, the script can decrease the size of the output tsv file by: <br>
 ## USAGE:
     python /path/to/this/script /full/path/to/rmats/directory [-out /full/path/to/output/directory] [-simple] [-PSI FLOAT] [-FDR FLOAT]
 
-You can run this script from the login node on the HPC. Just load pandas first:
+### Running script on the HPC
+You can run this script from the login node on the HPC. Just load pandas first. Exactly how this is done can change with the dynamic data structure on the HPC. As of 2025-05-21, this command works:
 
-    module load pandas
+    module load SciPy-bundle/2024.05-gfbf-2024a
 
+For a more generic, long-term solution. See a list of available python modules with:
+
+    module spider pandas
+
+Then get more info on one of the listed options, e.g.:
+
+    module spider pandas/2.2.2
+
+Then load an option from the resulting list, e.g.:
+
+    module load SciPy-bundle/2024.05-gfbf-2024a
